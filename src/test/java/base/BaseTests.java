@@ -1,14 +1,10 @@
 package base;
 
-import org.example.Home.HomePage;
-import org.openqa.selenium.By;
+import org.example.page.HomePage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
-import java.util.List;
 
 public class BaseTests {
 

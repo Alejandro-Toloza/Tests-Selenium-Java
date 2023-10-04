@@ -1,8 +1,8 @@
 package login;
 
 import base.BaseTests;
-import org.example.Home.LoginPage;
-import org.example.Home.SecureAreaPage;
+import org.example.page.LoginPage;
+import org.example.page.SecureAreaPage;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
