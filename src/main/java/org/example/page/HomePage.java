@@ -18,28 +18,37 @@ public class HomePage {
         driver.findElement(By.linkText(textLink)).click();
     }
 
+    //Login
     public LoginPage clickFormAuthentication(){
         //driver.findElement(formAuthenticationLink).click(); // Esto encontrará el elemento web.
         clickLink("Form Authentication");
         return new LoginPage(driver);
     }
 
-    //
+    //Dropdown
     public DropdownPage clickDropDown(){
         clickLink("Dropdown");
         return new DropdownPage(driver);
     }
 
+    //Hover
     public HoversPage clickHovers(){
         clickLink("Hovers");
         return new HoversPage(driver);
     }
 
+    //Aditional Keys
     public KeyPressesPage clickKeyPresses(){
         clickLink("Key Presses");
         return new KeyPressesPage(driver);
     }
 
+    //Alerts JavaScriot
+    public AlertsPage clickJavaScriptAlerts(){
+
+        clickLink("JavaScript Alerts");
+        return new AlertsPage(driver);
+    }
 
 
 
