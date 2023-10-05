@@ -12,18 +12,30 @@ public class HomePage {
         this.driver = driver;
     }
 
+    //Método genérico llamado clickLink
+    //Método genérico que usaremos para todos nuestros enlaces.
+    private void clickLink(String textLink){
+        driver.findElement(By.linkText(textLink)).click();
+    }
+
     public LoginPage clickFormAuthentication(){
-        //driver.findElement(formAuthenticationLink).click();
+        //driver.findElement(formAuthenticationLink).click(); // Esto encontrará el elemento web.
         clickLink("Form Authentication");
         return new LoginPage(driver);
     }
+
+    //
     public DropdownPage clickDropDown(){
         clickLink("Dropdown");
         return new DropdownPage(driver);
     }
-    private void clickLink(String textLink){
-        driver.findElement(By.linkText(textLink)).click();
+
+    public HoversPage clickHovers(){
+        clickLink("Hovers");
+        return new HoversPage(driver);
     }
+
+
 
 
 
