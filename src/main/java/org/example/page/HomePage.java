@@ -50,6 +50,11 @@ public class HomePage {
         return new AlertsPage(driver);
     }
 
+    //método para hacer clic en "Cargar archivo"
+    public FileUploadPage clickFileUpload(){
+        clickLink("File Upload");
+        return new FileUploadPage(driver);
+    }
 
 
 }
